@@ -9,5 +9,42 @@
     </div>
 
     {% include link-previews.html wrapperQuerySelector="content" %}
+<!-- Palt Typesetting JavaScript -->
+<script src="https://unpkg.com/palt-typesetting@0.9.1/bundle/typesetter.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const typesetter = new Typesetter({
+      useWordBreak: true,
+      wrapLatin: true,
+      insertThinSpaces: true,
+      thinSpaceWidth: '0.2em'
+    });
+    
+    // ノートのコンテンツに適用
+    typesetter.renderToSelector('content');
+    // または main要素全体に適用する場合
+    // typesetter.renderToSelector('main');
+  });
+</script>
   </body>
+
+<!-- Palt Typesetting CSS -->
+<link rel="stylesheet" href="https://unpkg.com/palt-typesetting@0.9.1/bundle/typesetter.min.css" />
+
+<!-- カスタムスタイル -->
+<style>
+  .typesetting-wrapper {
+    font-feature-settings: 'palt';
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    -webkit-text-stroke: 0.01em transparent;
+  }
+  
+  .typesetting-latin {
+    font-size: 105%;
+    vertical-align: 0.02em;
+    line-height: calc(1.8 / 1.05 - 0.02 * 2);
+    letter-spacing: 0.03em;
+  }
+</style>
 </html>

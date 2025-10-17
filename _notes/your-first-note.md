@@ -4,7 +4,13 @@ title: Your first seed
 hello-----
 ### Welcome!
 
-This is your first note. You'll find it in the [`notes/`](https://github.com/maximevaillancourt/digital-garden-jekyll-template/tree/master/_notes) directory. 
+はじめまして。ささじまです""。
+日本語で書いた文章が正しくpaltされるかどうかを確認します。
+
+Palt Typesetting は、美しいテキスト表示を実現するためのJavaScriptライブラリです。和欧混植、およびツメ組み(font-feature-settings: 'palt';)の版面設計において、最大限の力を発揮します。四分アキの自動挿入、カーニングルールの適用、英語のような単語区切りでの改行など、洗練された組版機能を提供します。
+
+Palt Typesetting ↗︎ is a JavaScript library designed to achieve beautiful text rendering. It excels in mixed typesetting utilizing proportional spacing (enabled via font-feature-settings: 'palt'; in CSS). This library offers sophisticated typesetting features, including automatic insertion of quarter em spaces, and application of kerning rules, and word-by-word line breaking similar to English text style.
+
 
 ### Link syntax
 
